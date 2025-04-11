@@ -1,0 +1,4 @@
+#CODIGO QUER TRANSFORMA CARACTERES DE LETRAS MINUSCULAS EM MAIUSCULAS 
+
+nome="Iderval Jose de Lima Neto"
+print(nome.upper())

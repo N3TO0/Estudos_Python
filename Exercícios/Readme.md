@@ -1,0 +1,1 @@
+Essa pasta contem pastas de assuntos divergentes sobre linguagem de programação python.

@@ -1,0 +1,4 @@
+#CODIGO QUE TRANSFORMA CARACTERES DE LETRAS MAIUSCULAS EM MINUSCULAS. 
+
+nome="Iderval Jose de Lima Neto"
+print(nome.lower())

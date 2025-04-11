@@ -1,0 +1,1 @@
+Exercicios usando estutura de repeditação (If elif else e For).

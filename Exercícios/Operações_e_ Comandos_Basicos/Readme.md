@@ -1,0 +1,1 @@
+Essa pasta contem arquivos de exercicios feitos nos estudos da linguagem de programação python, contendo o assunto de comandos e operações basicas da linguagem.
