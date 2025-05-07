@@ -1,0 +1,3 @@
+
+extrato=[]
+print(len(extrato))
