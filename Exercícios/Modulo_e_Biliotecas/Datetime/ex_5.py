@@ -8,3 +8,7 @@ data2 = datetime.now(pytz.timezone("America/Sao_Paulo")).strftime("Data :%d %m %
 
 print(data)
 print(data2)
+
+data4 = datetime.now(pytz.timezone("America/Sao_Paulo")).strftime("data: %d/%m/%Y \n hora: %H:%M")
+
+print(data4)
