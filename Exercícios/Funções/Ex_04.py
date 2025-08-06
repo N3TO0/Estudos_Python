@@ -18,3 +18,4 @@ while (True):
         continue
 
 print('\nFim!')
+print('\nFim!')
