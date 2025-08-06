@@ -17,4 +17,4 @@ while (True):
         print('\nOpção não reconhecida, tente novamente!')
         continue
 
-print('Fim!')
+print('\nFim!')
