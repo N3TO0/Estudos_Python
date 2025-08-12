@@ -19,7 +19,6 @@ c.exibir_info()
 
 
 
-
 #herança multipla
 class Pessoa:
     def __init__(self, nome):
