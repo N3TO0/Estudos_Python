@@ -195,3 +195,74 @@
 #     print(f"\nseu pesso ideal é : {((62.1 * altura) - 44.7):.1f}\n")
 # else: 
 #     print("\nDigitou algo errado 😑\n")
+
+#----------------------------------------------------------------
+
+# opition= int(input("\nInforme a opção que deseja:\n\n1 - Soma\n2 - Subitração\n3 - Divição\n4 - Mltiplicação\n\nOpção: "))
+
+# if opition == 1 or opition == 2 or opition == 3 or opition == 4:
+
+#     n1=int(input("\nInforme o numero: "))
+#     n2=int(input("\nInforme o segundo numero numero: "))
+
+#     if opition == 1:
+#         print(f"\n\n{n1} + {n2} = {(n1+n2):.0f}\n")
+    
+#     elif opition == 2:
+#         print(f"\n\n{n1} - {n2} = {(n1-n2):.0f}\n")
+        
+#     elif opition == 3:
+#         print(f"\n\n{n1} / {n2} = {(n1/n2):.0f}\n")
+        
+#     elif opition == 4:
+#         print(f"\n\n{n1} * {n2} = {(n1*n2):.0f}\n")
+# else: 
+#     print("\n\nNenhuma das opções escolhidas!!\n")
+
+#----------------------------------------------------------------
+
+# KW=float(input("\nInforme a quantidade de energia que foi consumida em kw: "))
+# TIPO_DE_INSTALACAO=input("\nInforma o tipo de intação:\n\nR - Residência\nI - Industria\nC - Comércio\n\nTipo: ").strip().lower()
+
+# if TIPO_DE_INSTALACAO == "i":
+#     if KW <=500:
+#             valor = (KW * 0.40)
+#     else:
+#             valor = (KW * 0.65)
+# elif TIPO_DE_INSTALACAO == "c":
+#     if KW <=1000:
+#             valor = (KW * 0.55)
+#     else:
+#             valor = (KW * 0.60)
+# elif TIPO_DE_INSTALACAO == "r":
+#     if KW <=5000:
+#             valor = (KW * 0.55)
+#     else:
+#             valor = (KW * 0.60)
+# else:
+#     print("\nOpção invalida!!\n")
+
+# print(f"\nO valor da sua energia é: R$ {valor:.2f}\n")
+
+#--------------------------------------------------------------
+
+# limite=" iderval neto "
+
+
+# for contador in limite[-1:0:-1]:
+#     print(f"{contador}")
+
+#--------------------------------------------------------------
+
+# for contador in range(10):
+#     print(f"\nNão vou dormir...")
+
+# print("\n\nzzzzzzz....\n")
+
+#--------------------------------------------------------------
+
+# for contador in range(50):
+#     if contador % 2 == 0:
+#         print(f"{contador} é um numero par!!")
+
+#--------------------------------------------------------------
