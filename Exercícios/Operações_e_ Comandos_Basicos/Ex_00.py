@@ -266,3 +266,34 @@
 #         print(f"{contador} é um numero par!!")
 
 #--------------------------------------------------------------
+
+# soma = 0
+
+# for i in range(1,7):
+#     termo=1/i
+#     soma = soma + termo
+#     print(f"\ntermo {i} = {termo:.2f}")
+# print(f"\nSoma dos elementos: {soma:.2f}\n")
+
+#-------------------------------------------------------------
+
+# maior = 0
+# menor = 0
+
+# for x in range(10):
+
+#     n=int(input(f"\nDigite o {x}° numero: "))
+
+#     if x == 0:
+
+#         maior = n
+#         menor = n
+
+#     else:
+
+#         if n > maior: maior = n    
+#         if n < menor : menor = n
+            
+
+# print(f"\nNumero maior: {maior}\nNumero menor: {menor}\n")
+#------------------------------------------------------------
