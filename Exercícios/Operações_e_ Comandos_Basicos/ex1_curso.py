@@ -1,49 +1,49 @@
-NOTA1= int(input("\nInforme a primeira nota da matéria: "))
-NOTA2= int(input("\nInforme a segunda nota da matéria: ")) 
+nota1= int(input("\nInforme a primeira nota da matéria: "))
+nota2= int(input("\nInforme a segunda nota da matéria: ")) 
 
-print(f"\nA média entre a {NOTA1} e {NOTA2} é igual a {(NOTA1 + NOTA2)/2}\n")
-
-# ---------------------------------------------------------------------------
-
-DINHEIRO_NA_CARTEIRA = float(input("\nInforma quanto dinheiro você tem: "))
-
-print(f"\nVocê pode comprar:\n10US$ {(DINHEIRO_NA_CARTEIRA / 5.50):.2f} \n")
+print(f"\nA média entre a {nota1} e {nota2} é igual a {(nota1 + nota2)/2}\n")
 
 # ---------------------------------------------------------------------------
 
-ALTURA=float(input("\nInforme a altura da parede em cm: "))
-LARGURA=float(input("\nInforma a largura da parede em cm: "))
+dinehiro_na_carteira = float(input("\nInforma quanto dinheiro você tem: "))
 
-AREA= (ALTURA/100) + (LARGURA/100)
+print(f"\nVocê pode comprar:\n10US$ {(dinehiro_na_carteira / 5.50):.2f} \n")
 
-BALTES_DE_TINTA = AREA / 2
+# ---------------------------------------------------------------------------
 
-if BALTES_DE_TINTA <= 2:
-    print(f"\nA área a ser pintada é de {AREA:.1f} Metros Quadrados\nSão necessarios {BALTES_DE_TINTA:.0f} Lata de tinta para pintar toda a parede!\n")
+altura=float(input("\nInforme a altura da parede em cm: "))
+largura=float(input("\nInforma a largura da parede em cm: "))
+
+area= (altura/100) + (largura/100)
+
+baldes_de_tinta = area / 2
+
+if baldes_de_tinta <= 2:
+    print(f"\nA área a ser pintada é de {area:.1f} Metros Quadrados\nSão necessarios {baldes_de_tinta:.0f} Lata de tinta para pintar toda a parede!\n")
 else:
-    print(f"\nA área a ser pintada é de {AREA:.1f} Metros Quadrados\nSão necessarios {BALTES_DE_TINTA:.0f} Latas de tinta para pintar toda a parede!\n")
+    print(f"\nA área a ser pintada é de {area:.1f} Metros Quadrados\nSão necessarios {baldes_de_tinta:.0f} Latas de tinta para pintar toda a parede!\n")
 
 # --------------------------------------------------------------------------
 
-TOTAL_ELEITORES=int(input("\nInforme o total de eleitores do municipio: "))
-VOTOS_BANCO=int(input("\nInforme a quantidade de votos em branco: "))
-VOTOS_NULOS=int(input("\nInforme a quantidade de votos nulos: "))
-VOTOS_VALIDOS=int(input("\nInforme a quantidade de votos validos: "))
+total_eleitores=int(input("\nInforme o total de eleitores do municipio: "))
+votos_brancos=int(input("\nInforme a quantidade de votos em branco: "))
+votos_nulos=int(input("\nInforme a quantidade de votos nulos: "))
+votos_validos=int(input("\nInforme a quantidade de votos validos: "))
 
-TOTAL_DE_VOTOS= VOTOS_VALIDOS + VOTOS_BANCO + VOTOS_NULOS
+total_de_votos= votos_validos + votos_brancos + votos_nulos
 
-if TOTAL_DE_VOTOS < TOTAL_ELEITORES :
+if total_de_votos < total_eleitores :
     print("\nOs dados não condizem com a quantidade eleitores! \n")
 else:
-    print(f"\nVotos Nulos: {((VOTOS_NULOS*TOTAL_ELEITORES)/100):.2f}%")
-    print(f"Votos Válidos: {((VOTOS_VALIDOS*TOTAL_ELEITORES)/100):.2f}%")
-    print(f"Votos Brancos: {((VOTOS_BANCO*TOTAL_ELEITORES)/100):.2f}%\n")
+    print(f"\nVotos Nulos: {((votos_nulos*total_eleitores)/100):.2f}%")
+    print(f"Votos Válidos: {((votos_validos*total_eleitores)/100):.2f}%")
+    print(f"Votos Brancos: {((votos_brancos*total_eleitores)/100):.2f}%\n")
 
 #--------------------------------------------------------------------------
 
-SALARIO_ATUAL=float(input("\nInforme o valor do seu salário atual: "))
-PORCENTAGEM=float(input("\nInforme a porcentagem do aumento: "))
+salarios_atual=float(input("\nInforme o valor do seu salário atual: "))
+porcentagem=float(input("\nInforme a porcentagem do aumento: "))
 
-NOVO_SALARIO= ((PORCENTAGEM * SALARIO_ATUAL) / 100) + SALARIO_ATUAL
+novo_salario= ((porcentagem * salarios_atual) / 100) + salarios_atual
 
-print(f"\nO seu novo salário é R$ {NOVO_SALARIO:.2f}\n")
+print(f"\nO seu novo salário é R$ {novo_salario:.2f}\n")
