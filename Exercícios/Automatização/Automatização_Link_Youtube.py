@@ -10,7 +10,7 @@ pa.press("enter")  # Pressiona Enter para abrir o navegador
 time.sleep(2)  # Espera o navegador carregar 
 
 pa.hotkey("ctrl", "l")  # Ativa a barra de endereços
-time.sleep(1)  # Pequena espera antes de digitar
+time.sleep(0.5)  # Pequena espera antes de digitar
 
 pa.write("https://www.youtube.com")  # Digita devagar para evitar erros
 pa.press("enter")  # Pressiona Enter para acessar o link

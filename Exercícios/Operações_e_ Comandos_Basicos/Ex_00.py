@@ -1,3 +1,5 @@
+
+
 # CODIGO PARA RETORNAR UMA FRASE.
 
 # nome = input("\nDigite um nome: ")
@@ -257,6 +259,7 @@
 # for contador in range(10):
 #     print(f"\nNão vou dormir...")
 
+
 # print("\n\nzzzzzzz....\n")
 
 #--------------------------------------------------------------
@@ -280,7 +283,9 @@
 # maior = 0
 # menor = 0
 
-# for x in range(10):
+# entrada= int( input("Digite quantos numeros ira informar: ")).split()
+
+# for x in range(entrada):
 
 #     n=int(input(f"\nDigite o {x}° numero: "))
 
@@ -297,3 +302,145 @@
 
 # print(f"\nNumero maior: {maior}\nNumero menor: {menor}\n")
 #------------------------------------------------------------
+
+# numero_escolhido= int(input("Digite o numero para saber sua taboada\n\nNumero: "))
+# print("\n")
+
+# for iterador in range(11):
+
+#     print(f"{numero_escolhido} x {iterador} = {numero_escolhido*iterador}")
+
+
+# print("\n\nFim do programa\n")
+
+# ----------------------------------------------------------
+
+# numero_escolhido=0
+# print("\n")
+
+# for iterador in range(11):
+
+#     for iterador2 in range(11):
+#         print(f"{numero_escolhido} x {iterador2} = {numero_escolhido*iterador2}")
+#     print("\n")
+#     numero_escolhido += 1
+
+
+# print("\n\nFim do programa\n")
+
+
+
+#-----------------------------------------------------------
+
+# soma=int(0)
+
+# for iterador in range(1,101):
+#     soma+=iterador
+# print("\nSoma: ", soma)
+
+#------------------------------------------------------------
+
+# while True:
+
+#     entrada=input("\nPG é o que ? ").lower()
+
+#     if entrada == "viciado":
+#         print("\n\nAcertouuu!!!")
+#         break
+    
+#     else:
+#         print(f"\n {entrada}Errou!!")
+#         continue
+
+# print("\nFim do programa\n")
+
+#------------------------------------------------------------
+
+# numero=int(input("Digite um numero maior que 0: "))
+
+# while numero >= 0:
+#     print("\n", numero)
+#     numero -= 1
+# print()
+
+#------------------------------------------------------------
+
+# soma= 0
+# num=int(input("digite um numero positivo, para encerrar um numero negativo: "))
+# while(num>0):
+#     soma=soma+0
+#     num=int(input("digite um numero positivo, para encerrar um numero negativo: "))
+# print("soma", soma)
+
+#------------------------------------------------------------
+
+# soma=0
+# vezes=0
+# resposta ="sim"
+
+# while resposta == "sim":
+
+#     idade=int(input("Digite uma idade: "))
+#     soma += idade
+#     vezes += 1
+
+#     resposta = input("Deseja continuar (Sim ou Não): ").lower()
+
+# print(f"\nRepetiu: {vezes} vezes\nSoma: {soma}")
+
+#-----------------------------------------------------------
+
+# ENTRADA=1
+
+# while ENTRADA >0:
+
+#     ENTRADA=int(input("\nDigite um numero para saber se é impar ou par!\nNumero: "))
+
+#     if ENTRADA % 2 == 0:
+#         print(f"\n'{ENTRADA}' é um numero par\n")
+#     else:
+#         print(f"\n'{ENTRADA}' é um numerO impár\n")
+
+# print("Fim do progama!! ")
+
+#-----------------------------------------------------------
+
+lista =[2,12,32,54,36,7,6,5,3,]
+# nome="iderval"
+
+
+# for iterador in lista[::-1]:
+#     print(iterador)
+
+# lista.append(10) coloca 10 no final da lista
+# lista.append(15) coloca 15 no final da lista
+# lista.append(20) coloca 20 no final da lista
+# print()
+# print()
+
+# print(lista)
+
+# lista.insert(0,1) insere 1 na posição 0
+# lista.insert(0,3) insere 3 na posição 0
+# lista.insert(0,20) insere 20 na posião 0
+# lista.remove(20) remove 20
+# lista.pop(4) remove a posiçao 4 
+
+
+# print(lista)
+
+# print(f"posição: {lista.index("top")}") informa a posição do elemento informado
+
+# sum(lista) soma os elementos da lista
+# max(lista) informa o maior elemento da lista
+# min(lista) informa o menor elemento da lista
+# lista.count(n) conta quantas vezes n aparece na lista
+# 
+# lista.sort() #ordena a lista
+# print(lista)
+# lista.reverse()
+# print(lista)
+# 
+# for elemento in reversed(lista): # le cada elemento da lista mas do final para o começo em vez do começo para o final
+#   print(elemento)
+# 
