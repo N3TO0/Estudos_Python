@@ -1,16 +1,15 @@
 #1. Elaborar um programa que apresente o resultado da soma e da média aritmética dos valores pares situados entre 40 e 70 (inclusive)
 
-numero_atual=40
 contador_numeros_pares=0
 soma_numeros_pares=0
 
-for repetidor in range(30):
-    
-    if numero_atual % 2 == 0:
-        contador_numeros_pares+=1
-        soma_numeros_pares+=numero_atual
+for repetidor in range(40,71,1):
 
-    numero_atual+=1
+    if repetidor % 2 == 0:
+        contador_numeros_pares+=1
+        soma_numeros_pares+=repetidor
+
+
 
 print(f"\nExistem {contador_numeros_pares} numeros pares entre 40 e 70")
 print(f"\nA soma de todos os numeros pares de 40 a 70 é: {soma_numeros_pares}")
