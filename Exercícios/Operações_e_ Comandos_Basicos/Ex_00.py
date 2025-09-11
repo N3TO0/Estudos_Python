@@ -405,7 +405,7 @@
 
 #-----------------------------------------------------------
 
-lista =[2,12,32,54,36,7,6,5,3,]
+# lista =[2,12,32,54,36,7,6,5,3,]
 # nome="iderval"
 
 
@@ -444,3 +444,128 @@ lista =[2,12,32,54,36,7,6,5,3,]
 # for elemento in reversed(lista): # le cada elemento da lista mas do final para o começo em vez do começo para o final
 #   print(elemento)
 # 
+# ------------------------------------------------------------
+
+# lista = [1,2,3,4,5,6,7,8,9]
+
+# for elemento in reversed(lista):
+#     print(elemento)
+
+# print()
+
+# lista.reverse()
+# print(lista)
+
+# ------------------------------------------------------------
+
+# lista = [1,2,3,4,5,6,7,8,9,10]
+
+# nova_lista=[item**2 for item in lista if item %2 ==0]
+
+# for item in nova_lista:
+#     print(item)
+
+# ------------------------------------------------------------
+# lista_positivo=[]
+# lista_negativo=[]
+
+# for iterador in range(8):
+#     entrada=int(input("\nDigite um numero: "))
+
+#     if entrada < 0 : lista_negativo.append(entrada)
+#     if entrada >= 0 : lista_positivo.append(entrada)
+
+# print()
+
+# for iterador in lista_positivo:
+#     print(f"Os numeros possitivos são {iterador}")
+
+# print()
+
+# for iterador in lista_negativo:
+#     print(f"\nOs numeros negativos são {iterador}")
+
+# -----------------------------------------------------------
+
+# lista=[]
+
+# for iterador in range(8):
+#     entrada=int(input("Digite um numero: "))
+#     lista.append(entrada)
+
+# print("\nNumeros possitivos: \n")
+
+# lista_positivo=[print(f"   Numero {item}") for item in lista if item  > 0 ]
+
+# print("\nNumeros negativos: \n")
+
+# lista_negativo=[print(f"   Numero {item}") for item in lista if item < 0 ]
+
+# print()
+
+# -----------------------------------------------------------
+
+# lista=[]
+# maior=0
+# menor=0
+
+# for iterador in range(12):
+
+#     entrada=int(input(f"Digite a {iterador+1}° temperaturas médias mensais: "))
+#     lista.append(entrada)
+
+#     if iterador == 1:
+#         maior=entrada
+#         menor=entrada
+
+#     if entrada > maior:
+#         maior=entrada
+
+#     if entrada < menor:
+#         menor=entrada
+
+
+# print(f"\nNumeros Maior: {maior}\n")
+# print(f"\nNumeros Menor: {menor}\n")
+
+# -----------------------------------------------------------
+
+# tuplas=("fruta 1","fruta 2","fruta 3","fruta 4","fruta 5","fruta 6",)
+# tuplas=("nome",)
+
+# print(tuplas)
+
+# -----------------------------------------------------------
+
+# from collections import namedtuple
+
+# coordenadas = namedtuple('cordenadas',[ 'latitude' , 'longitude' ])
+
+# casa_cordenadas=coordenadas(1,8)
+
+# print(casa_cordenadas)
+# print(casa_cordenadas.latitude)
+# print(casa_cordenadas.longitude)
+
+# print(coordenadas)
+
+# estudar!!! tuplas nomeadas!!
+
+# pessoa = namedtuple('pessoa', ['raça ', 'cpf', 'sexo'])
+
+# junior=pessoa("humano",1234567891, "masculino" )
+# clara=pessoa("elfo",12345678910, "feminino" )
+
+# print(junior.cpf)
+# print(junior.raça )
+# print(junior.sexo)
+
+# print()
+
+# print(clara.cpf)
+# print(clara.raça)
+# print(clara.sexo)
+
+# print()
+
+# estudar!!! tuplas nomeadas!!
