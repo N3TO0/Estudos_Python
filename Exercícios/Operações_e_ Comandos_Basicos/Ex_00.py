@@ -551,14 +551,14 @@
 
 # estudar!!! tuplas nomeadas!!
 
-# pessoa = namedtuple('pessoa', ['raça ', 'cpf', 'sexo'])
+# Pessoa = namedtuple("Pessoa", ["raça", "cpf", "sexo"])
 
-# junior=pessoa("humano",1234567891, "masculino" )
-# clara=pessoa("elfo",12345678910, "feminino" )
+# junior=Pessoa("humano",1234567891, "masculino" )
+# clara=Pessoa("elfo",12345678910, "feminino" )
 
-# print(junior.cpf)
-# print(junior.raça )
-# print(junior.sexo)
+# print(f"Junior tem o cpf: {junior.cpf}")
+# print(f"Junior tem a raça: {junior.raça}")
+# print(f"Junior é do sexo: {junior.sexo}")
 
 # print()
 
@@ -569,3 +569,91 @@
 # print()
 
 # estudar!!! tuplas nomeadas!!
+
+# ------------------------------------------------------------------
+
+# nome = 'Iderva Jose de Lima Neto'
+# i=0
+# while i < len(nome):
+#     print(nome[i])
+#     i+=1
+
+# print("\nFim do Programa!")
+
+# ------------------------------------------------------------------
+
+
+# while 1:
+    
+#     entrada=input(f"{"="*20} CALCULADORA {"="*20}\n\nDigite o que deseja:\n\n1 - Somar (+)\n2 - Subitrair (-)\n3 - Dividir (/)\n4 - Multiplicar (*)\n5 - Sair (S)\n\nDigite: ").lower().strip()
+
+#     print(f"\n{"="*53}")
+
+#     if entrada == "1" or entrada == "+":
+#         n1=int(input("\nDigite o numero: "))
+#         n2=int(input("Digite o numero: "))
+#         print(f"\n{n1} + {n2} = {n1+n2}\n")
+
+#     elif entrada == "2" or entrada ==  "-":
+#         n1=int(input("\nDigite o numero: "))
+#         n2=int(input("Digite o numero: "))
+#         print(f"\n{n1} - {n2} = {n1-n2}\n")
+        
+#     elif entrada == "3" or entrada ==  "/":
+#         n1=int(input("\nigite o numero: "))
+#         n2=int(input("\nDigite o numero: "))
+#         print(f"\n{n1} / {n2} = {n1/n2}\n")
+
+#     elif entrada == "4" or entrada ==  "*":
+#         n1=int(input("\nDigite o numero: "))
+#         n2=int(input("Digite o numero: "))
+#         print(f"\n{n1} * {n2} = {n1*n2}\n")
+
+#     elif entrada == "5" or entrada ==  "s":
+#         break
+#     else:
+#         print("\nNenhuma das opções informadas foi escolhida, tente novamente!\n")
+#     continue
+
+# print("\n\nFim do programa!\n")
+
+# ------------------------------------------------------------------
+
+palavra_certa="neto"
+palavra_entrada=""
+palavras_acertadas=""
+contador=0
+
+while palavra_certa != palavra_entrada:
+
+    letra_secreta=input("\nDigite uma letra: ")
+    
+
+    if len(letra_secreta) != 1 :
+        print("\nFoi digitado mais de uma letra! tente novamente !\n")
+        continue
+
+    contador+=1
+    palavra_entrada=""
+
+    for letra in palavra_certa:
+        
+        if letra == letra_secreta or letra in palavras_acertadas:
+            palavra_entrada+=letra
+            palavras_acertadas+=letra
+
+        else:
+            palavra_entrada+="*"
+        palavra_entrada = palavra_entrada
+        
+    print(f"\nPalavra secreta: {palavra_entrada}\n")
+
+print(f"Parabens você acertouuu  em {contador} tentativas!!!")
+
+
+
+        
+
+
+    
+
