@@ -17,5 +17,5 @@
 
 #Filtro list comprehendion
 #                             filtro
-lista= [n for n in range(10) if n <= 5]
-print(lista)
+# lista= [n for n in range(10) if n <= 5]
+# print(lista)
