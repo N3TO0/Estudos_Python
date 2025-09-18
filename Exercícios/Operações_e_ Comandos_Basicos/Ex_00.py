@@ -420,14 +420,14 @@
 
 # print(lista)
 
-# lista.insert(0,1) insere 1 na posição 0
+# lista.insert(0,1) #insere 1 na posição 0
 # lista.insert(0,3) insere 3 na posição 0
 # lista.insert(0,20) insere 20 na posião 0
 # lista.remove(20) remove 20
 # lista.pop(4) remove a posiçao 4 
 
 
-# print(lista)
+# lista
 
 # print(f"posição: {lista.index("top")}") informa a posição do elemento informado
 
@@ -619,36 +619,36 @@
 
 # ------------------------------------------------------------------
 
-palavra_certa="neto"
-palavra_entrada=""
-palavras_acertadas=""
-contador=0
+# palavra_certa="neto"
+# palavra_entrada=""
+# palavras_acertadas=""
+# contador=0
 
-while palavra_certa != palavra_entrada:
+# while palavra_certa != palavra_entrada:
 
-    letra_secreta=input("\nDigite uma letra: ")
+#     letra_secreta=input("\nDigite uma letra: ")
     
 
-    if len(letra_secreta) != 1 :
-        print("\nFoi digitado mais de uma letra! tente novamente !\n")
-        continue
+#     if len(letra_secreta) != 1 :
+#         print("\nFoi digitado mais de uma letra! tente novamente !\n")
+#         continue
 
-    contador+=1
-    palavra_entrada=""
+#     contador+=1
+#     palavra_entrada=""
 
-    for letra in palavra_certa:
+#     for letra in palavra_certa:
         
-        if letra == letra_secreta or letra in palavras_acertadas:
-            palavra_entrada+=letra
-            palavras_acertadas+=letra
+#         if letra == letra_secreta or letra in palavras_acertadas:
+#             palavra_entrada+=letra
+#             palavras_acertadas+=letra
 
-        else:
-            palavra_entrada+="*"
-        palavra_entrada = palavra_entrada
+#         else:
+#             palavra_entrada+="*"
+#         palavra_entrada = palavra_entrada
         
-    print(f"\nPalavra secreta: {palavra_entrada}\n")
+#     print(f"\nPalavra secreta: {palavra_entrada}\n")
 
-print(f"Parabens você acertouuu  em {contador} tentativas!!!")
+# print(f"Parabens você acertouuu  em {contador} tentativas!!!")
 
 
 
