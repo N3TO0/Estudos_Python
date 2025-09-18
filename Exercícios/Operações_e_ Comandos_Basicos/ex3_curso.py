@@ -9,8 +9,6 @@ for repetidor in range(40,71,1):
         contador_numeros_pares+=1
         soma_numeros_pares+=repetidor
 
-
-
 print(f"\nExistem {contador_numeros_pares} numeros pares entre 40 e 70")
 print(f"\nA soma de todos os numeros pares de 40 a 70 é: {soma_numeros_pares}")
 print(f"\nA media aritmética dos numeros pares de 40 a 70 é: {soma_numeros_pares / contador_numeros_pares}\n\n")
@@ -19,69 +17,68 @@ print(f"\nA media aritmética dos numeros pares de 40 a 70 é: {soma_numeros_par
 
 #2. Leia a idade de 20 pessoas e exiba quantas pessoas são maiores de idade.
 
-mariores_de_idade=0
+# mariores_de_idade=0
 
-for contador in range(20):
+# for contador in range(20):
     
-    idade=int(input("\nDigite sua idade: "))
-    if idade >= 18:
-        mariores_de_idade+=1
+#     idade=int(input("\nDigite sua idade: "))
+#     if idade >= 18:
+#         mariores_de_idade+=1
 
-print(f"\n{mariores_de_idade} pessoas são maiores de idade!\n")
+# print(f"\n{mariores_de_idade} pessoas são maiores de idade!\n")
 
 # ---------------------------------------------------------------------------------------
 
 # 3. Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.
 
-menor_idade=0
+# menor_idade=0
 
-for contador in range(10):
+# for contador in range(10):
     
-    idade=int(input("\nDigite sua idade: "))
-    if contador == 0: menor_idade=idade
+#     idade=int(input("\nDigite sua idade: "))
+#     if contador == 0: menor_idade=idade
         
-    elif menor_idade > idade: menor_idade=idade
+#     elif menor_idade > idade: menor_idade=idade
         
-
-print(f"\nA pessoa mais nova tem {menor_idade} anos\n")
+# print(f"\nA pessoa mais nova tem {menor_idade} anos\n")
 
 # ---------------------------------------------------------------------------------------
 
 # 4. Crie uma variável que vai armazenar a palavra secreta “Programação”. 
 # Em seguida, utilize uma estrutura de repetição que deve parar de solicitar uma palavra apenas quando o usuário acertar a palavra secreta.
 
-PALAVRA_SECRETA="shopping"
+# PALAVRA_SECRETA="shopping"
 
-tentativas=0
-palavras_acertadas_salvas=""
+# tentativas=0
+# palavras_acertadas_salvas=""
 
-print("\nTente acertar a palavra secreta!\n")
-while True:
+# print("\nTente acertar a palavra secreta!\n")
+# while True:
 
-    palavra_sensurada_com_letra_acertada =""
+#     palavra_sensurada_com_letra_acertada =""
 
-    letra_digitada=input("\nDigite uma letra: ")
+#     letra_digitada=input("\nDigite uma letra: ")
     
-    if letra_digitada in PALAVRA_SECRETA:
-        print("\nVocê acertou uma letra!")
-    else:
-        print("\nVocê errou a letra!")
+#     if letra_digitada in PALAVRA_SECRETA:
+#         print("\nVocê acertou uma letra!")
+#     else:
+#         print("\nVocê errou a letra!")
 
-    for letra in PALAVRA_SECRETA:
-        if letra == letra_digitada or letra in palavras_acertadas_salvas:
+#     for letra in PALAVRA_SECRETA:
+#         if letra == letra_digitada or letra in palavras_acertadas_salvas:
             
-            palavras_acertadas_salvas+=letra_digitada
-            palavra_sensurada_com_letra_acertada+=letra
-        else:
+#             palavras_acertadas_salvas+=letra_digitada
+#             palavra_sensurada_com_letra_acertada+=letra
+#         else:
             
-            palavra_sensurada_com_letra_acertada+="*"
+#             palavra_sensurada_com_letra_acertada+="*"
     
-    print("\n",palavra_sensurada_com_letra_acertada,)            
+#     print("\n",palavra_sensurada_com_letra_acertada,)            
     
-    if palavra_sensurada_com_letra_acertada == PALAVRA_SECRETA:
-        break
+#     if palavra_sensurada_com_letra_acertada == PALAVRA_SECRETA:
+#         break
 
-print(f"\nVocê acertouuu em {tentativas}, parabenss !!🎉\n\n")
+# print(f"\nVocê acertouuu em {tentativas}, parabenss !!🎉\n\n")
 
 # -----------------------------------------------------------------------------
 
@@ -92,38 +89,35 @@ print(f"\nVocê acertouuu em {tentativas}, parabenss !!🎉\n\n")
 # b) a média da altura das mulheres
 # c) a média da altura da turma.
 
-altura_sexo_feminino=[]
-altura_da_turma=[]
+# altura_sexo_feminino=[]
+# altura_da_turma=[]
 
-menor_altura_turma=0
-maior_altura_turma=0
+# menor_altura_turma=0
+# maior_altura_turma=0
 
-
-for contador in range(3):
-    altura=float(input("\n\nDigita a sua altura: "))
-    sexo=int(input("Digite seu sexo biológico:\n\n1 - Masculindo\n2 - Feminino \n\nMeu sexo é: "))
-
+# for contador in range(3):
+#     altura=float(input("\n\nDigita a sua altura: "))
+#     sexo=int(input("Digite seu sexo biológico:\n\n1 - Masculindo\n2 - Feminino \n\nMeu sexo é: "))
     
-    if contador == 0:
-        menor_altura_turma=altura
-        maior_altura_turma=altura
+#     if contador == 0:
+#         menor_altura_turma=altura
+#         maior_altura_turma=altura
 
-    else:
-        if altura < menor_altura_turma : menor_altura_turma = altura
-        if altura > maior_altura_turma : maior_altura_turma = altura
+#     else:
+#         if altura < menor_altura_turma : menor_altura_turma = altura
+#         if altura > maior_altura_turma : maior_altura_turma = altura
 
-    if sexo == 2:
-        altura_sexo_feminino.append(altura)
-    altura_da_turma.append(altura)
+#     if sexo == 2:
+#         altura_sexo_feminino.append(altura)
+#     altura_da_turma.append(altura)
         
+# media_turma=sum(altura_sexo_feminino) / len(altura_sexo_feminino)
+# media_feminino=sum(altura_da_turma) / len(altura_da_turma)
 
-media_turma=sum(altura_sexo_feminino) / len(altura_sexo_feminino)
-media_feminino=sum(altura_da_turma) / len(altura_da_turma)
-
-print(f"\n\nMaior altura da turma: {maior_altura_turma:.2f}")
-print(f"Menor altura da turma: {menor_altura_turma:.2f}")
-print(f"Media da altura da turma: {media_turma:.2f}")
-print(f"Media da altura do sexo feminino: {media_feminino:.2f}\n\n")
+# print(f"\n\nMaior altura da turma: {maior_altura_turma:.2f}")
+# print(f"Menor altura da turma: {menor_altura_turma:.2f}")
+# print(f"Media da altura da turma: {media_turma:.2f}")
+# print(f"Media da altura do sexo feminino: {media_feminino:.2f}\n\n")
 
 # -----------------------------------------------------------------------------
 
@@ -160,7 +154,6 @@ for contador in range(numero_de_funcionarios):
 
     media_dos_salarios += salario
     
-        
 print(f"\n\nO nome do funcionario com o salário mais alto é: {nome_do_funcionario_com_maior_salario}")
 print(f"A média dos solários dos funcionarios é: R$ {(media_dos_salarios/numero_de_funcionarios):.2f}")
 print(f"A quantidade de funcionários que trabalham no departamento de vendas é: {len(departamento_vendas)}\n\n")
