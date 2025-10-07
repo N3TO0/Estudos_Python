@@ -650,10 +650,93 @@
 
 # print(f"Parabens você acertouuu  em {contador} tentativas!!!")
 
+# ----------------------------------------------------------------------------
 
 
-        
+# produtos=dict()
 
-
+# for elemento in range(1):
+#     entrada_id=(int(input("\nDigite o id do produto: ")))
+#     entrada_nome=(input("Digite o nome do produto: "))
+#     produtos[entrada_id] = entrada_nome
     
+# id_consulta=int(input("\nDigite o id que deseja verificar: "))
 
+# for chave in produtos.keys():
+#     if chave == id_consulta:
+#         print(f"\nid: {chave}\nProduto: {produtos[chave]}")
+
+
+# ---------------------------------------------------------------------
+
+# lista_de_palavras=input("Digite uma frase: ").lower().split()
+
+# dicionario={ palavra : lista_de_palavras.count(palavra) for palavra in lista_de_palavras}
+# print(dicionario)
+# ---------------------------------------------------------------------
+
+
+# i=int(input("Digite 1 ou 2 ou 3: "))
+
+# match i:
+#     case 1:
+#         print("você digitou 1")
+#     case 2:
+#         print("você digitou 2")
+#     case 3:
+#         print("você digitou 3")
+
+
+# ---------------------------------------------------------------------
+
+
+# from math import pow
+# a=5
+# b=2
+# print(pow(a,b))
+
+
+# ---------------------------------------------------------------------
+
+# aluno={ 'nome': "neto",  'curso': "Desenvolvimento Back-end",  'notas': [ 8, 9, 10 ] }
+# media= (sum(aluno['notas'])) / len(aluno['notas'])
+
+# # print(aluno['nome'])
+# # print(media)
+
+# aluno['nome']="neto show"
+
+# aluno['cidade']='aracaju'
+
+# del aluno['notas']
+
+# curso_concluido = aluno.pop('curso')
+
+# print(aluno)
+# print(curso_concluido)
+
+# --------------------------------------------------------------------------
+
+# frase = "o python é uma linguagem de programação poderosa e versátil pois o python é simples de aprender"
+
+# frase=frase.split()
+
+# dicionario={ palavra : frase.count(palavra)  for palavra in frase}
+
+# print(dicionario)
+
+
+# --------------------------------------------------------------------------
+
+# cadastro_aluno={}
+
+# for elemento in range(2):
+#     aluno={}
+    
+#     aluno["matricula"] = int(input("Digite sua matricula: ").strip()) 
+#     aluno["nome"] = input("Digite seu nome: ").strip() 
+#     aluno["nota"] = input("Digite sua nota: ").strip()
+
+#     cadastro_aluno[f"Aluno_{elemento+1}"] = aluno
+
+# print(cadastro_aluno)
