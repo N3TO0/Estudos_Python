@@ -1,40 +1,14 @@
-matriculas=[]
-notas=[]
-contador_aprovação=0
+def filtrar_produtos(valor_max,*lista):
 
-print()
-gabarito_lista=[ input(f"Gabarto {contador+1}° questão: ").lower() for contador in range(10) ]
-
-for contador in range(10):
-    print()
-    matriculas.append(input(f"Digite a matricula do {contador+1}° aluno: "))
-    print()
-    notas.append([(input(f"Digite a  resposta da {questao+1}° Questão:  ")).lower() for questao in range(10)])
-
-for contador_primario in range(len(matriculas)):
-
-    print(f"\n matricula: {matriculas[contador_primario]}:\n")
-
-    contador_acertos=0
-
-    for contador_segundario in range(len(gabarito_lista)):
-
-        if notas[contador_primario][contador_segundario] == gabarito_lista[contador_segundario]:
-            contador_acertos+=1
-            print(f"{contador_segundario+1}° questão está Correta!")
-        else:
-            print(f"{contador_segundario+1}° quesão está Errada!")
+#     print()
+#     for produto in lista:
+#         for chave, valor in produto.items():
+#             if valor <= valor_max:
+#                 print(f"Produto: {chave} vale: {valor:.2f}")
+#     print()
 
 
-        if contador_acertos >= 6 and contador_segundario == 9:
-            contador_aprovação+=1
-            print(f"\n\nAluno com Matricula {matriculas[contador_primario]} está Aprovado com nota {contador_acertos} !!")
-        elif contador_acertos < 6 and contador_segundario == 9:
-            print(f"\n\nAluno com Matricula {matriculas[contador_primario]} está Reprovado com nota {contador_acertos} !!")
+# lista_de_produtos=[{"Arroz": 4.50},{"Macarrão": 3.00},{"Babana": 12.00},{"Abacaxi": 7.00},{"Mateiga": 5.00},{"Pão": 1.00},]
+# valor_max=float(input("\nDigite maximo para filtrar os produtos: "))
 
-    input("\nAperte 'ENTER' para seguir: ")
-
-porcentual_aprovacao = float((10 * contador_aprovação ) / 100) * 100
-
-print(f"\nO porcentual de aprovação é de : {porcentual_aprovacao:.2f}%\n")
-    
+# filtrar_produtos(valor_max,*lista_de_produtos)

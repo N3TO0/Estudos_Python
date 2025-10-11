@@ -154,6 +154,25 @@
 
 # Codigo:
 
+# def processar_pedido( nome, *itens, **detalhes_pedido):
+#     print(f"\nNome do cliente: {nome}")
+#     iterador = 1
+#     print("-"*30)
+#     for item in itens:
+        
+#         print(f" item {iterador} = {item}")
+#         iterador+=1
+#     print("-"*30)
+#     for chave, valor in detalhes_pedido.items():
+#         print(f" {chave} : {valor}")
+#     print("-"*30)
+
+# nome="iderval"
+# itens=["pão","queijo", "manteira", "cebola","tomate", "requeijão"]
+# detalhes={"Pagamento":"Cartão", "Entrega": "urgente" }
+
+# processar_pedido(nome,*itens,**detalhes)
+
 
 # ---------------------------------------------------------------------------
 
@@ -164,7 +183,20 @@
 
 
 # Codigo:
+# def filtrar_produtos(valor_max,*lista):
 
+#     print()
+#     for produto in lista:
+#         for chave, valor in produto.items():
+#             if valor <= valor_max:
+#                 print(f"Produto: {chave} vale: {valor:.2f}")
+#     print()
+
+
+# lista_de_produtos=[{"Arroz": 4.50},{"Macarrão": 3.00},{"Babana": 12.00},{"Abacaxi": 7.00},{"Mateiga": 5.00},{"Pão": 1.00},]
+# valor_max=float(input("\nDigite maximo para filtrar os produtos: "))
+
+# filtrar_produtos(valor_max,*lista_de_produtos)
 
 # ---------------------------------------------------------------------------
 
@@ -175,3 +207,26 @@
 
 
 # Codigo:
+
+# def criar_perfil_usuario(nome,email,**informacoes):
+    
+#     perfils={}
+#     perfils["nome"]=nome
+#     perfils["email"]=email
+#     for iterador in informacoes.values():
+#         for chave, valor in iterador.items():
+#             perfils[chave]=valor
+
+#     return perfils
+
+
+# informacoes={}
+
+# nome=input("\nInsira seu nome: ").strip()
+# email=input("insira seu e-mail: ").strip()
+# informacoes["idade"]=input("insira sua idade: ").strip()
+# informacoes["cpf"]=input("insira seu cpf: ").strip()
+
+# perfil=criar_perfil_usuario(nome=nome, email=email, informacoes=informacoes)
+
+# print(perfil)
