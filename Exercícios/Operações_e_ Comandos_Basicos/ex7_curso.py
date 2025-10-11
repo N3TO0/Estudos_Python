@@ -65,14 +65,47 @@
 
 # Codigo: 
 
+produtos={}
+id_contador=100
+
+for iterador in range(3):
+
+    nome_produto= input("\nDigite o nome do produto: ")
+
+    id_contador+=1
+    produtos[id_contador] = nome_produto
+
+consulta=int(input("\nDigite o id do produto: "))
+
+if consulta in produtos:
+    print(produtos[consulta])
+else:
+    print("\nProduto não existe, ou id incorreto")
+
 
 # --------------------------------------------------------------------------------------------------------------------
 
-# 7) Você recebeu uma lista de e-mails de participantes de um evento, mas a lista contém
-#    vários e-mails duplicados. Sua tarefa é criar uma nova coleção que contenha apenas os
-#    e-mails únicos e, em seguida, imprimir a quantidade de participantes únicos.
+# 7) Você recebeu uma frase e sua tarefa é contar a frequência de cada palavra. Para
+#    simplificar, desconsidere maiúsculas/minúsculas (ou seja, "Python" e "python" devem
+#    ser contadas como a mesma palavra). O resultado final deve mostrar cada palavra única
+#    e o número de vezes que ela apareceu.
 
 # Codigo: 
+
+palavras_contadas={}
+
+frase = "O Python é uma Linguagem de Programação Poderosa e Versátil pois o Python é Simples de Aprender"
+frase = frase.lower().split()
+
+for palavra in frase:
+    if palavra in palavras_contadas:
+        palavras_contadas[palavra] += 1
+    else:
+        palavras_contadas[palavra] = 1
+        
+print(palavras_contadas)
+
+
 
 
 # --------------------------------------------------------------------------------------------------------------------
@@ -87,3 +120,9 @@
 
 # Codigo: 
 
+    
+emails_participantes = [ 'ana@email.com', 'bruno@email.com', 'carla@email.com', "daniel@email.com", 'ana@email.com', 'bruno@email.com', 'emilia@email.com']
+
+participantes_unicos = set( emails_participantes)
+
+print(f"\nQuantidade de participantes unicos: {len(participantes_unicos)}")
