@@ -155,16 +155,19 @@
 # Codigo:
 
 # def processar_pedido( nome, *itens, **detalhes_pedido):
+
 #     print(f"\nNome do cliente: {nome}")
-#     iterador = 1
 #     print("-"*30)
-#     for item in itens:
+
+#     for iterador, item in enumerate(itens, start=1):
         
 #         print(f" item {iterador} = {item}")
-#         iterador+=1
+
 #     print("-"*30)
+
 #     for chave, valor in detalhes_pedido.items():
 #         print(f" {chave} : {valor}")
+
 #     print("-"*30)
 
 # nome="iderval"
@@ -183,20 +186,26 @@
 
 
 # Codigo:
-# def filtrar_produtos(valor_max,*lista):
 
-#     print()
+# def filtrar_produtos(preco_max,*lista):
+
+#     lista_filtragem=[]
+
 #     for produto in lista:
 #         for chave, valor in produto.items():
-#             if valor <= valor_max:
-#                 print(f"Produto: {chave} vale: {valor:.2f}")
-#     print()
+#             if valor <= preco_max:
+#                 lista_filtragem.append({chave : valor})
 
+#     return lista_filtragem
 
 # lista_de_produtos=[{"Arroz": 4.50},{"Macarrão": 3.00},{"Babana": 12.00},{"Abacaxi": 7.00},{"Mateiga": 5.00},{"Pão": 1.00},]
-# valor_max=float(input("\nDigite maximo para filtrar os produtos: "))
+# preco_max=float(input("\nDigite maximo para filtrar os produtos: "))
 
-# filtrar_produtos(valor_max,*lista_de_produtos)
+# preco_filtrado=filtrar_produtos(preco_max,*lista_de_produtos)
+
+# for item in preco_filtrado:
+#     for chave, valor in  item.items():
+#         print(f"Item: {chave} tem o valor: {valor}")
 
 # ---------------------------------------------------------------------------
 
@@ -210,14 +219,13 @@
 
 # def criar_perfil_usuario(nome,email,**informacoes):
     
-#     perfils={}
-#     perfils["nome"]=nome
-#     perfils["email"]=email
-#     for iterador in informacoes.values():
-#         for chave, valor in iterador.items():
-#             perfils[chave]=valor
+#     perfil={}
+#     perfil["nome"]=nome
+#     perfil["email"]=email
+    
+#     perfil.update(informacoes)
 
-#     return perfils
+#     return perfil
 
 
 # informacoes={}
@@ -227,6 +235,6 @@
 # informacoes["idade"]=input("insira sua idade: ").strip()
 # informacoes["cpf"]=input("insira seu cpf: ").strip()
 
-# perfil=criar_perfil_usuario(nome=nome, email=email, informacoes=informacoes)
+# perfil=criar_perfil_usuario(nome, email, **informacoes)
 
 # print(perfil)
