@@ -740,3 +740,7 @@
 #     cadastro_aluno[f"Aluno_{elemento+1}"] = aluno
 
 # print(cadastro_aluno)
+
+# -------------------------------------------------------------------------
+
+print()
