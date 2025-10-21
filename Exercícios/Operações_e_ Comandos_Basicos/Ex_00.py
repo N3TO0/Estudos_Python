@@ -730,13 +730,100 @@
 
 # cadastro_aluno={}
 
-# for elemento in range(2):
+# for elemento in range(1):
 #     aluno={}
     
-#     aluno["matricula"] = int(input("Digite sua matricula: ").strip()) 
+#     matricula = int(input("\nDigite sua matricula: ").strip()) 
 #     aluno["nome"] = input("Digite seu nome: ").strip() 
 #     aluno["nota"] = input("Digite sua nota: ").strip()
 
-#     cadastro_aluno[f"Aluno_{elemento+1}"] = aluno
+#     cadastro_aluno[matricula] = aluno
 
-# print(cadastro_aluno)
+# # print(cadastro_aluno)
+
+# for chave, valor in cadastro_aluno.items():
+#     print(f"\nMatricula: {chave}")
+#     for chave2, valor2 in valor.items():
+#         print(f"{chave2} = {valor2}")
+
+
+# --------------------------------------------------------------------------
+
+# # A lista VIP (um set, para verificação rápida!)
+# lista_vip = {'Ana', 'Bruno', 'Carla', 'Daniel', 'Neto'}
+
+# # A fila de pessoas tentando entrar (uma lista)
+# fila_de_entrada = ['Felipe', 'Ana', 'Daniel', 'Maria', 'Bruno', 'Ana', 'Neto']
+
+# for nome in fila_de_entrada:
+#     if nome in lista_vip:
+#         print(f"Bem-vindo(a), {nome}! Pode entrar.")
+#     else:
+#         print(f"Desculpe, {nome}. Seu nome não está na lista.")
+
+# --------------------------------------------------------------------------
+
+# def par_impar(numero):
+#     if numero % 2 == 0:
+#         return f"\n{numero} é par"
+#     else:
+#         return f"\n{numero} é Ímpar"
+
+# numero = int(input("Digite um numero para verificar se é impar ou par: ").strip())
+
+# print(par_impar(numero))
+
+# --------------------------------------------------------------------------
+
+# def calcular_imc(peso,altura):
+#     return peso / ( altura ** 2 )
+
+# def classificar_imc(imc):
+
+#     if  imc < 18.5:
+#         return"Abaixo do peso"
+
+#     elif imc >=18.5 and imc < 24.9:
+#        return"Peso ideal"
+
+#     elif imc >= 25.0  and imc <= 29.9:
+#         return"Levemente acima do peso"
+
+#     elif imc >= 30.0 and imc < 34.9:
+#         return"Obesidade grau I"
+        
+#     elif imc >= 35.0 and imc < 40.0:
+#         return"Obesidade grau II (severa)"
+#     else:
+#         return"Obesidade grau III (mórbida)"
+
+# peso=float(input("Informe seu peso em kg: ").strip())
+# altura=float(input("Informe seu peso em M e CM: ").strip())
+
+# imc = calcular_imc(peso,altura)
+
+# classificacao = classificar_imc(imc)
+
+# print(f"\nSeu imc é {imc:.2f} Classificação: {classificacao}.")
+
+# --------------------------------------------------------------------------
+
+
+def analisar_notas(lista_de_notas):
+    notas_turma={}
+
+    notas_turma["maior_nota"] = max(lista_de_notas)
+    notas_turma["menor_nota"] = min(lista_de_notas)
+    notas_turma["media_das_notas"] = sum(lista_de_notas) / len(lista_de_notas)
+    
+    return notas_turma
+
+notas_turma_A = [9, 7.5, 8, 10, 5.5, 6.5]
+analise_turma_A = analisar_notas(notas_turma_A)
+print("--- Análise da Turma A ---")
+print(analise_turma_A)
+
+notas_turma_B = [10, 10, 9.5]
+analise_turma_B = analisar_notas(notas_turma_B)
+print("--- Análise da Turma B ---")
+print(analise_turma_B)
